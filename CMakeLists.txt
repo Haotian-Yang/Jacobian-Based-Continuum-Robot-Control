@@ -4,6 +4,8 @@ project(csc476-simulation-framework)
 
 #Important CMAKE stuff
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+set(CMAKE_CXX_COMPILER g++)
+
 
 #VTK
 set(VTK_DIR "usr/local/lib")

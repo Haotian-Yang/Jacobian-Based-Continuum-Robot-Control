@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.19.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4
+CMAKE_SOURCE_DIR = /Users/haotian/CSC476/Assignments/A4/assignment4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build
+CMAKE_BINARY_DIR = /Users/haotian/CSC476/Assignments/A4/assignment4/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/csc476-simulation-framework.dir/depend.make
@@ -78,94 +78,94 @@ include CMakeFiles/csc476-simulation-framework.dir/flags.make
 
 CMakeFiles/csc476-simulation-framework.dir/main.cpp.o: CMakeFiles/csc476-simulation-framework.dir/flags.make
 CMakeFiles/csc476-simulation-framework.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/main.cpp.o -c /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/main.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/main.cpp.o -c /Users/haotian/CSC476/Assignments/A4/assignment4/main.cpp
 
 CMakeFiles/csc476-simulation-framework.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/csc476-simulation-framework.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/main.cpp > CMakeFiles/csc476-simulation-framework.dir/main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/CSC476/Assignments/A4/assignment4/main.cpp > CMakeFiles/csc476-simulation-framework.dir/main.cpp.i
 
 CMakeFiles/csc476-simulation-framework.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/csc476-simulation-framework.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/main.cpp -o CMakeFiles/csc476-simulation-framework.dir/main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/CSC476/Assignments/A4/assignment4/main.cpp -o CMakeFiles/csc476-simulation-framework.dir/main.cpp.s
 
 CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o: CMakeFiles/csc476-simulation-framework.dir/flags.make
 CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o: ../src/controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o -c /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o -c /Users/haotian/CSC476/Assignments/A4/assignment4/src/controller.cpp
 
 CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/controller.cpp > CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/CSC476/Assignments/A4/assignment4/src/controller.cpp > CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.i
 
 CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/controller.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/CSC476/Assignments/A4/assignment4/src/controller.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.s
 
 CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.o: CMakeFiles/csc476-simulation-framework.dir/flags.make
 CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.o: ../src/ctcr_model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.o -c /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.o -c /Users/haotian/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp
 
 CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp > CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp > CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.i
 
 CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.s
 
 CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o: CMakeFiles/csc476-simulation-framework.dir/flags.make
 CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o: ../src/mainloop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o -c /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/mainloop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o -c /Users/haotian/CSC476/Assignments/A4/assignment4/src/mainloop.cpp
 
 CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/mainloop.cpp > CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/CSC476/Assignments/A4/assignment4/src/mainloop.cpp > CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.i
 
 CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/mainloop.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/CSC476/Assignments/A4/assignment4/src/mainloop.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.s
 
 CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o: CMakeFiles/csc476-simulation-framework.dir/flags.make
 CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o: ../src/robot_independent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o -c /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o -c /Users/haotian/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp
 
 CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp > CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp > CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.i
 
 CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.s
 
 CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o: CMakeFiles/csc476-simulation-framework.dir/flags.make
 CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o: ../src/tdcr_model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o -c /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o -c /Users/haotian/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp
 
 CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp > CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp > CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.i
 
 CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.s
 
 CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.o: CMakeFiles/csc476-simulation-framework.dir/flags.make
 CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.o: ../src/visualizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.o -c /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/visualizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.o -c /Users/haotian/CSC476/Assignments/A4/assignment4/src/visualizer.cpp
 
 CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/visualizer.cpp > CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/haotian/CSC476/Assignments/A4/assignment4/src/visualizer.cpp > CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.i
 
 CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/visualizer.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/haotian/CSC476/Assignments/A4/assignment4/src/visualizer.cpp -o CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.s
 
 # Object files for target csc476-simulation-framework
 csc476__simulation__framework_OBJECTS = \
@@ -310,7 +310,7 @@ csc476-simulation-framework: /usr/local/lib/libvtksys-8.2.1.dylib
 csc476-simulation-framework: /usr/local/lib/libvtkfreetype-8.2.1.dylib
 csc476-simulation-framework: /usr/local/lib/libvtkzlib-8.2.1.dylib
 csc476-simulation-framework: CMakeFiles/csc476-simulation-framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable csc476-simulation-framework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable csc476-simulation-framework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/csc476-simulation-framework.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -323,6 +323,6 @@ CMakeFiles/csc476-simulation-framework.dir/clean:
 .PHONY : CMakeFiles/csc476-simulation-framework.dir/clean
 
 CMakeFiles/csc476-simulation-framework.dir/depend:
-	cd /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4 /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4 /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/build/CMakeFiles/csc476-simulation-framework.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/haotian/CSC476/Assignments/A4/assignment4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/haotian/CSC476/Assignments/A4/assignment4 /Users/haotian/CSC476/Assignments/A4/assignment4 /Users/haotian/CSC476/Assignments/A4/assignment4/build /Users/haotian/CSC476/Assignments/A4/assignment4/build /Users/haotian/CSC476/Assignments/A4/assignment4/build/CMakeFiles/csc476-simulation-framework.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/csc476-simulation-framework.dir/depend
 

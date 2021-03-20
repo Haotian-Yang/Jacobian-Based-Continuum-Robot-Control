@@ -55,9 +55,9 @@ bool CTCRModel::forward_kinematics(Eigen::Matrix4d &ee_frame, Eigen::MatrixXd &b
     //YOUR CODE GOES HERE
 
 
-    double beta1 = q.coeff(3, 0);
-    double beta2 = q.coeff(4, 0);
-    double beta3 = q.coeff(5, 0);
+    double beta1 = q(3);
+    double beta2 = q(4);
+    double beta3 = q(5);
     double L1 = m_length[0];
     double L2 = m_length[1];
     double L3 = m_length[2];
@@ -71,21 +71,23 @@ bool CTCRModel::forward_kinematics(Eigen::Matrix4d &ee_frame, Eigen::MatrixXd &b
         return false;
     }
 
+
+
     // Calculate the transition points
     std::vector<double> T;
     std::vector<double> T_straight_lst;
     std::vector<double> T_total_lst;
     for (int t = 0; t < 3; ++t) {
-        double T_straight = q.coeff(3 + t, 0) + m_straight_length[t];
-        double T_total = q.coeff(3 + t, 0) + m_length[t];
+        double T_straight = q(3 + t) + m_straight_length[t];
+        double T_total = q(3 + t) + m_length[t];
         // Add non-zero to the vector. Set threshold to avoid FP overflow issues
-        if (T_straight > 1e-6) {
+        T_straight_lst.push_back(T_straight);
+        T_total_lst.push_back(T_total);
+        if (T_straight >= 0) {
             T.push_back(T_straight);
-            T_straight_lst.push_back(T_straight);
         }
-        if (T_total > 1e-6) {
+        if (T_total >= 0) {
             T.push_back(T_total);
-            T_total_lst.push_back(T_total);
         }
     }
 
@@ -115,7 +117,7 @@ bool CTCRModel::forward_kinematics(Eigen::Matrix4d &ee_frame, Eigen::MatrixXd &b
             // Check if the current transition point is on the current tube or not.
             if (T[i] <= T_total_lst[j]) {
                 ++outer_tube;
-                I_j = M_PI * (pow(m_ro[j], 4) - pow(m_ri[j], 4)) / 64.0;
+                I_j = M_PI /64.0 *(pow(m_ro[j], 4) - pow(m_ri[j], 4));
                 denominator += m_youngs_modulus * I_j;
 
                 // if the current transition point is on the curved part of the tube?
@@ -123,7 +125,7 @@ bool CTCRModel::forward_kinematics(Eigen::Matrix4d &ee_frame, Eigen::MatrixXd &b
                     curved = true;
                     Eigen::Matrix<double, 2, 1> alpha_vec;
                     alpha_vec.setZero();
-                    alpha_vec << cos(q.coeff(j, 0)), sin(q.coeff(j, 0));
+                    alpha_vec << std::cos(q(j)), std::sin(q(j));
                     numerator += m_youngs_modulus * I_j * m_curvature[j] * alpha_vec;
                 }
             }
@@ -131,20 +133,11 @@ bool CTCRModel::forward_kinematics(Eigen::Matrix4d &ee_frame, Eigen::MatrixXd &b
 
         // if the transition point is on curved part of any 3 tubes
         Eigen::Matrix<double, 2, 1> kappa_xy = numerator / denominator;
-        double kappa_x = kappa_xy.coeff(0, 0);
-        double kappa_y = kappa_xy.coeff(1, 0);
+        double kappa_x = kappa_xy(0);
+        double kappa_y = kappa_xy(1);
         kappa_i = sqrt(pow(kappa_x, 2) + pow(kappa_y, 2));
-        phi_i = atan2(kappa_y, kappa_x);
-        //if (curved) {
-        //    Eigen::Matrix<double, 2, 1> kappa_xy = numerator / denominator;
-        //    double kappa_x = kappa_xy.coeff(0, 0);
-        //    double kappa_y = kappa_xy.coeff(1, 0);
-        //    kappa_i = sqrt(pow(kappa_x, 2) + pow(kappa_y, 2));
-        //    phi_i = atan2(kappa_y, kappa_x);
-        //} else {
-        //    kappa_i = 0;
-        //    phi_i = q.coeff(outer_tube - 1, 0); // the phi is determined by alpha of outermost tube
-        //}
+        phi_i = std::atan2(kappa_y, kappa_x);
+
 
         l_i = (i == 0) ? T[i] : T[i] - T[i - 1];
         kappa_lst.push_back(kappa_i);
@@ -164,7 +157,8 @@ bool CTCRModel::forward_kinematics(Eigen::Matrix4d &ee_frame, Eigen::MatrixXd &b
 
     // Get the disk frames and end-effector frame
     backbone_centerline = arc_to_x(m_base_frame, kappa_lst, l_lst, phi_lst_corrected, m_points_per_seg, false);
-    ee_frame = backbone_centerline.block(0, T.size()*m_points_per_seg*4, 4, 4);
+    ee_frame = backbone_centerline.block(0, backbone_centerline.cols() - 4, 4, 4);
+
 
 
 

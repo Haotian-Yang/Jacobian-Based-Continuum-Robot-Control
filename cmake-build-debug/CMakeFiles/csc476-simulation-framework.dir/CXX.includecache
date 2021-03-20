@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/controller.h
-cmath
--
-Eigen/Dense
--
-robot_independent.h
--
-ctcr_model.h
--
-tdcr_model.h
--
-
 ../include/ctcr_model.h
 robot_independent.h
 -
@@ -48,24 +36,8 @@ vector
 Eigen/Dense
 -
 
-../include/tdcr_model.h
-robot_independent.h
-../include/robot_independent.h
-cmath
--
-iostream
--
-ctime
--
-vector
--
-array
--
-Eigen/Dense
--
-
-/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/controller.cpp
-controller.h
+/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp
+ctcr_model.h
 -
 
 /usr/local/include/eigen3/Eigen/Cholesky

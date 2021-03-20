@@ -8,7 +8,7 @@ CMakeFiles/csc476-simulation-framework.dir/main.cpp.o
  ../include/robot_independent.h
  ../include/tdcr_model.h
  ../include/visualizer.h
- /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/main.cpp
+ /Users/haotian/CSC476/Assignments/A4/assignment4/main.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
@@ -338,7 +338,7 @@ CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o
  ../include/ctcr_model.h
  ../include/robot_independent.h
  ../include/tdcr_model.h
- /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/controller.cpp
+ /Users/haotian/CSC476/Assignments/A4/assignment4/src/controller.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
@@ -549,7 +549,7 @@ CMakeFiles/csc476-simulation-framework.dir/src/controller.cpp.o
 CMakeFiles/csc476-simulation-framework.dir/src/ctcr_model.cpp.o
  ../include/ctcr_model.h
  ../include/robot_independent.h
- /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp
+ /Users/haotian/CSC476/Assignments/A4/assignment4/src/ctcr_model.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
@@ -764,7 +764,7 @@ CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o
  ../include/robot_independent.h
  ../include/tdcr_model.h
  ../include/visualizer.h
- /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/mainloop.cpp
+ /Users/haotian/CSC476/Assignments/A4/assignment4/src/mainloop.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
@@ -1087,7 +1087,7 @@ CMakeFiles/csc476-simulation-framework.dir/src/mainloop.cpp.o
  /usr/local/include/vtk-8.2/vtkkwiml/int.h
 CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o
  ../include/robot_independent.h
- /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp
+ /Users/haotian/CSC476/Assignments/A4/assignment4/src/robot_independent.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
@@ -1305,7 +1305,7 @@ CMakeFiles/csc476-simulation-framework.dir/src/robot_independent.cpp.o
 CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o
  ../include/robot_independent.h
  ../include/tdcr_model.h
- /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp
+ /Users/haotian/CSC476/Assignments/A4/assignment4/src/tdcr_model.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
@@ -1515,7 +1515,7 @@ CMakeFiles/csc476-simulation-framework.dir/src/tdcr_model.cpp.o
  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/csc476-simulation-framework.dir/src/visualizer.cpp.o
  ../include/visualizer.h
- /Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/src/visualizer.cpp
+ /Users/haotian/CSC476/Assignments/A4/assignment4/src/visualizer.cpp
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
