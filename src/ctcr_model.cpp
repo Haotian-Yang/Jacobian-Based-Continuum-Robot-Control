@@ -130,16 +130,21 @@ bool CTCRModel::forward_kinematics(Eigen::Matrix4d &ee_frame, Eigen::MatrixXd &b
         }
 
         // if the transition point is on curved part of any 3 tubes
-        if (curved) {
-            Eigen::Matrix<double, 2, 1> kappa_xy = numerator / denominator;
-            double kappa_x = kappa_xy.coeff(0, 0);
-            double kappa_y = kappa_xy.coeff(1, 0);
-            kappa_i = sqrt(pow(kappa_x, 2) + pow(kappa_y, 2));
-            phi_i = atan2(kappa_y, kappa_x);
-        } else {
-            kappa_i = 0;
-            phi_i = q.coeff(outer_tube - 1, 0); // the phi is determined by alpha of outermost tube
-        }
+        Eigen::Matrix<double, 2, 1> kappa_xy = numerator / denominator;
+        double kappa_x = kappa_xy.coeff(0, 0);
+        double kappa_y = kappa_xy.coeff(1, 0);
+        kappa_i = sqrt(pow(kappa_x, 2) + pow(kappa_y, 2));
+        phi_i = atan2(kappa_y, kappa_x);
+        //if (curved) {
+        //    Eigen::Matrix<double, 2, 1> kappa_xy = numerator / denominator;
+        //    double kappa_x = kappa_xy.coeff(0, 0);
+        //    double kappa_y = kappa_xy.coeff(1, 0);
+        //    kappa_i = sqrt(pow(kappa_x, 2) + pow(kappa_y, 2));
+        //    phi_i = atan2(kappa_y, kappa_x);
+        //} else {
+        //    kappa_i = 0;
+        //    phi_i = q.coeff(outer_tube - 1, 0); // the phi is determined by alpha of outermost tube
+        //}
 
         l_i = (i == 0) ? T[i] : T[i] - T[i - 1];
         kappa_lst.push_back(kappa_i);

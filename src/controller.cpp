@@ -86,10 +86,10 @@ void Controller::execute_ctcr_control_iteration(Eigen::Matrix4d &ee_frame, Eigen
     }
 
     Eigen::MatrixXd q_desired = J_psudo_inv * V_b_reduced;
-    Eigen::MatrixXd q_new = q_cur;
+    Eigen::MatrixXd q_new = q_cur + q_desired;
 //    std::cout << "q_cur"<< q_cur <<std::endl;
 //    std::cout << "q_desired"<< q_desired <<std::endl;
-    q_new.block<3, 1>(3, 0) += q_desired.block<3, 1>(3, 0);
+//    q_new.block<3, 1>(3, 0) += q_desired.block<3, 1>(3, 0);
 //    std::cout << "q_new"<< q_new <<std::endl;
 //	std::cout << body_twist <<std::endl;
 //    std::cout << body_twist_reduced <<std::endl;
