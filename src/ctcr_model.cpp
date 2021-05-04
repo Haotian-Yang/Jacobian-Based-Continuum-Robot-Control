@@ -199,7 +199,6 @@ bool CTCRModel::get_body_jacobian(Eigen::MatrixXd &J, Eigen::MatrixXd q)
 	if(!forward_kinematics(init_ee_frame, init_backbone_centerline, tube_ind, q))
 	{
 		//Return false if joint value constraints are not met
-		std::cout << "forward false" << std::endl;
 		return false;
 	}
 	//Calculate the Body Jacobian using Finite Differences here (YOUR CODE GOES HERE)

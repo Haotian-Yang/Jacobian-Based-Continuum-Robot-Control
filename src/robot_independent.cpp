@@ -121,9 +121,6 @@ Eigen::Matrix4d InvTransformation(Eigen::Matrix4d T)
 Eigen::Matrix<double, 3, 1>  SkewSymmetricToVec(Eigen::Matrix3d omega_skew)
 {
     Eigen::Matrix<double, 3, 1> omega;
-    //double omega_1 = omega_skew.block(1, 2, 1 ,1);
-    //double omega_2 = omega_skew.block(1, 0, 1 ,1);
-    //double omega_3 = omega_skew.block(2, 1, 1 ,1);
     double omega_1 = -omega_skew(1, 2);
     double omega_2 = omega_skew(0, 2);
     double omega_3 = -omega_skew(0, 1);
@@ -151,19 +148,32 @@ Eigen::Matrix3d  VecToSkewSymmetric(Eigen::Vector3d v)
 //						and theta is the displacement along this screw axis
 Eigen::Matrix4d matrix_log(Eigen::Matrix4d T)
 {
-//    std::cout << "hi" << std::endl;
-    //Eigen::Matrix3d R = T.block(0, 0, 3, 3);
-    //Eigen::Matrix<double, 3, 1> p = T.block(0, 3, 3, 1);
-    //double theta = acos((R.trace() - 1.0) / 2.0);
+    Eigen::Matrix3d R = T.block<3, 3>(0, 0);
+    Eigen::Matrix<double, 3, 1> p = T.block<3, 1> (0, 3);
+    double theta = acos((R.trace() - 1.0) / 2.0);
+    Eigen::Matrix<double, 3, 3> omega;
+    Eigen::Matrix<double, 3, 1> v;
+    omega.setZero();
 
-    //if(theta == 0 || theta != theta)
-    //{
+    if(theta == 0 || theta != theta)
+    {
+        theta = p.squaredNorm();
+        v = p/p.squaredNorm();
+    }
+    else
+    {
+        omega = (R - R.transpose())/(2*sin(theta));
+        Eigen::Matrix<double, 3, 3> last;
+        last =(1.0/theta - 1.0/2.0 * cos(theta/2.0)/sin(theta/2.0))*omega.array().abs2();
+        v = (1.0/theta * Eigen::MatrixXd::Identity(3, 3) - 1/2.0 * omega + last) * p;
 
-    //}
-	Eigen::Matrix4d matrix_log = T.log();
-    //Eigen::Matrix4d matrix_log;
-    //matrix_log.setZero();
-	
+    }
+    Eigen::Matrix4d matrix_log;
+    matrix_log.setZero();
+    matrix_log.block<3, 3>(0, 0) = omega;
+    matrix_log.block<3, 1>(0, 3) = v;
+    matrix_log = matrix_log * theta;
+
 	return matrix_log;
 
 }

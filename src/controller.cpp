@@ -72,7 +72,7 @@ void Controller::execute_ctcr_control_iteration(Eigen::Matrix4d &ee_frame, Eigen
     Eigen::MatrixXd J_reduced = J.block<3, 6>(3, 0);
     Eigen::MatrixXd J_psudo_inv;
 
-    // Singular Jacobian
+    // Singular robust Jacobian
     if (wdls_jac) {
         Eigen::Matrix<double, 6, 6> W;
         W.setZero();
@@ -87,17 +87,7 @@ void Controller::execute_ctcr_control_iteration(Eigen::Matrix4d &ee_frame, Eigen
 
     Eigen::MatrixXd q_desired = J_psudo_inv * V_b_reduced;
     Eigen::MatrixXd q_new = q_cur + q_desired;
-//    std::cout << "q_cur"<< q_cur <<std::endl;
-//    std::cout << "q_desired"<< q_desired <<std::endl;
-//    q_new.block<3, 1>(3, 0) += q_desired.block<3, 1>(3, 0);
-//    std::cout << "q_new"<< q_new <<std::endl;
-//	std::cout << body_twist <<std::endl;
-//    std::cout << body_twist_reduced <<std::endl;
-//    std::cout << "J: "<< J <<std::endl;
-//    std::cout << "J_re: "<< J_reduced <<std::endl;
-//    std::cout << "J_sudo: "<< J_psudo_inv <<std::endl;
-//    std::cout << "q_desired: "<< q_desired <<std::endl;
-//    std::cout << "q_new: "<< q_new <<std::endl;
+    // Update the simulation
     mp_CTCR->forward_kinematics(ee_frame, backbone_centerline, tube_ind, q_new);
 
 
