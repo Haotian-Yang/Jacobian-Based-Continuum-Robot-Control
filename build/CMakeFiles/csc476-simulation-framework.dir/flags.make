@@ -4,7 +4,7 @@
 # compile CXX with g++
 CXX_DEFINES = -DH5_BUILT_AS_DYNAMIC_LIB -DvtkDomainsChemistry_AUTOINIT="1(vtkDomainsChemistryOpenGL2)" -DvtkIOExport_AUTOINIT="2(vtkIOExportOpenGL2,vtkIOExportPDF)" -DvtkRenderingContext2D_AUTOINIT="1(vtkRenderingContextOpenGL2)" -DvtkRenderingCore_AUTOINIT="3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)" -DvtkRenderingOpenGL2_AUTOINIT="1(vtkRenderingGL2PSOpenGL2)" -DvtkRenderingVolume_AUTOINIT="1(vtkRenderingVolumeOpenGL2)"
 
-CXX_INCLUDES = -I/Users/haotian/CSC476/Assignments/A4/assignment4/include -I/Users/haotian/CSC476/Assignments/A4/assignment4 -I/Users/haotian/CSC476/Assignments/A4/assignment4/usr/local/include/vtk-8.2 -isystem /usr/local/include/vtk-8.2 -isystem /usr/local/include/vtk-8.2/vtkogg/include -isystem /usr/local/include/eigen3
+CXX_INCLUDES = -I/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/include -I/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4 -I/Users/haotian/Dropbox/UofT/CSC476/Assignments/A4/assignment4/usr/local/include/vtk-8.2 -isystem /usr/local/include/vtk-8.2 -isystem /usr/local/include/vtk-8.2/vtkogg/include -isystem /usr/local/include/eigen3
 
-CXX_FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++11
+CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11
 
