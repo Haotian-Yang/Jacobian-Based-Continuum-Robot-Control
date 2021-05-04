@@ -1,5 +1,6 @@
 build/
 cmake-build-debug/
 .idea/
+.vscode/
 CMakeFiles/
 csc476_assignment4.*
